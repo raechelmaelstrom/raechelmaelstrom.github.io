@@ -14,7 +14,7 @@ baseurl: "/"
 username: Raechel Maelstrom
 # typing_text: This will be typed before 'scroll down for more'.
 # > set this to your job title, e.g. Fullstack Developer
-typing_text: happy mad scientist
+typing_text: happy mad scientist.
 # email: Your E-Mail address for the email button.
 email: raechelmaelstrom@gmail.com
 # For every social button you want to display, set your username or userid
@@ -24,7 +24,7 @@ github_username: raechelmaelstrom
 codepen_username: 
 dev_username: 
 linkedin_username: 
-twitter_username: raechelmaelstrom
+twitter_username: rae_maelstrom
 
 # ABOUT ME SECTION
 # show_aboutme_card:
