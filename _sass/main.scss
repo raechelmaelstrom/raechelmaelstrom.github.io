@@ -13,13 +13,29 @@ $font-size-base: 1rem !default;
 $font-size-h1: 2rem !default;
 $font-weight-strong: 600;
 $text-color: #fff !default;
-$bg-color: rgba(43, 45, 47, 1);
+$bg-color: rgba(0, 0, 0, 1);
 $card-bg-color: linear-gradient(
   145deg,
   rgba(115, 115, 115, 0.15) 15%,
-  rgba(43, 45, 47, 1) 80%
+  rgba(0, 0, 0, 1) 80%
 );
-$primary-color: #ff073a;
+$primary-color: #8093ce;
+
+/* Particles */
+#particles {
+    /* stay in a constant spot on the page, regardless of scroll */
+    position: fixed;
+    /* fill the entire page */
+    width: 100%;
+    height: 100%;
+    /* remove the space along the edges */
+    margin: 0;
+    padding: 0;
+    /* position it to start at the top of the page */
+    top: 0;
+    /* put it behind other content */
+    z-index: -1;
+}
 
 /* General */
 
@@ -60,7 +76,7 @@ a {
 
 .highlight-title {
   color: $primary-color;
-  text-shadow: 0.25rem 0.25rem 0.25rem $primary-color;
+  text-shadow: 1rem 1rem 1rem $primary-color;
 }
 
 .highlight-link {
@@ -144,8 +160,8 @@ a {
   height: 100%;
   justify-content: center;
   left: 0;
-  margin: 0.5rem;
-  padding: 0.5rem;
+  margin: 0rem;
+  padding: 0rem;
   position: absolute;
   right: 0;
   z-index: 999;
@@ -160,7 +176,7 @@ a {
   }
 
   .load hr {
-    animation: spin 2s ease infinite;
+    animation: spin 1s ease infinite;
     border: 0;
     height: 40%;
     margin: 0;
@@ -169,17 +185,17 @@ a {
   }
 
   .load :first-child {
-    animation-delay: -1.5s;
+    animation-delay: -0.75s;
     background: $text-color;
   }
 
   .load :nth-child(2) {
-    animation-delay: -1s;
+    animation-delay: -0.5s;
     background: $primary-color;
   }
 
   .load :nth-child(3) {
-    animation-delay: -0.5s;
+    animation-delay: -0.25s;
     background: $text-color;
   }
 
@@ -227,12 +243,11 @@ a {
 /* Landing Page */
 
 #landing {
-  background: $bg-color;
   color: $text-color;
   display: flex;
   height: 100%;
-  margin: 0.5rem;
-  padding: 0.5rem;
+  margin: 0rem;
+  padding: 0rem;
   text-align: center;
 }
 
