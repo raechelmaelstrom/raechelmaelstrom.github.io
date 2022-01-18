@@ -347,6 +347,16 @@ a {
     }
   }
 
+  .twitch:hover {
+    .circle {
+      animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards,
+        colorTwitch 1s linear forwards;
+    }
+    .social-svg {
+      fill: #9146FF;
+    }
+  }
+
   @keyframes outWaveIn {
     to {
       stroke-dasharray: 510;
@@ -388,6 +398,12 @@ a {
   @keyframes colorTwitter {
     to {
       stroke: #1da1f2;
+    }
+  }
+
+  @keyframes colorTwitch {
+    to {
+      stroke: #9146FF;
     }
   }
 }
@@ -658,6 +674,18 @@ a {
   .twitter:hover {
     .social-svg {
       fill: #1da1f2;
+    }
+  }
+
+  .twitch:hover {
+    .social-svg {
+      fill: #9146FF;
+    }
+  }
+
+  .email:hover {
+    .social-svg {
+      fill: #d44638;
     }
   }
 }

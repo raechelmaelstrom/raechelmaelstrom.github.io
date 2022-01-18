@@ -10,17 +10,19 @@
       </span>
     </h1>
     <div class="landing-icons">
-      {% if site.email != null %}
-        <a class="social-link email" aria-label="My E-Mail" href="mailto:{{site.email}}">
+      {% if site.twitch_username != null %}
+        <a class="social-link twitch" aria-label="My Twitch" target="_blank" rel="noreferrer"
+          href="https://twitch.tv/{{site.twitch_username}}"
+        >
           <svg viewBox="0 0 200 200" class="circle">
             <circle cx="100" cy="100" r="80" />
           </svg>
           <div class="social">
             <svg class="social-svg" viewBox="0 0 48 48">
-              <use x="12" y="12" width="24" height="24" viewBox="0 0 48 48" xlink:href="{{ "/assets/img/solid.svg#envelope" | prepend: site.baseurl }}""></use>
+              <use x="12" y="12" width="24" height="24" viewBox="0 0 48 48" xlink:href="{{ "/assets/img/brands.svg#twitch" | prepend: site.baseurl }}"></use>
             </svg>
           </div>
-          <span class="label">E-Mail</span>
+          <span class="label">Twitch</span>
         </a>
       {% endif %}
 
@@ -101,6 +103,20 @@
             </svg>
           </div>
           <span class="label">Twitter</span>
+        </a>
+      {% endif %}
+
+      {% if site.email != null %}
+        <a class="social-link email" aria-label="My E-Mail" href="mailto:{{site.email}}">
+          <svg viewBox="0 0 200 200" class="circle">
+            <circle cx="100" cy="100" r="80" />
+          </svg>
+          <div class="social">
+            <svg class="social-svg" viewBox="0 0 48 48">
+              <use x="12" y="12" width="24" height="24" viewBox="0 0 48 48" xlink:href="{{ "/assets/img/solid.svg#envelope" | prepend: site.baseurl }}""></use>
+            </svg>
+          </div>
+          <span class="label">E-Mail</span>
         </a>
       {% endif %}
     </div>
